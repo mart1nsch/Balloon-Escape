@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Bantayog';
+    src: url('../fonts/Bantayog-Regular.woff2') format('woff2')
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bantayog', monospace;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+}
+
+.container, .tela-inicial, .container-end-game{
+    text-align: center;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-inicial{
+    display: none;
+}
+
+.title{
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    overflow: visible;
+}
+
+.player-img{
+    height: 120px;
+}
+
+.bullet{
+    background-image: url('../img/bullet.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.container-end-game{
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+.title-end-game{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.btn-end-game{
+    font-size: 30px;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-end-game, .title-end-game, .title, .sub-title {
+    opacity: 0;
+    animation: opacity 2s forwards;
+}
+
+.pontuation-end-game{
+    margin-bottom: 20px;
+}
+
+.record-end-game{
+    color: red;
+    display: none;
+}
+
+.container-pontuation-end-game{
+    display: flex;
+    justify-content: center;
+}
+
+.points-end-game, .best-points-end-game{
+    margin-left: 5px;
+    width: 42px;
+    text-align: end;
+}
+
+.points{
+    font-size: 60px;
+    position: absolute;
+    top: 2rem;
+    z-index: 98;
+}
+
+.enemy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
