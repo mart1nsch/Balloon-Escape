@@ -291,6 +291,8 @@ class Game {
         this.createPlayer();
         this.createEnemy();
         this.gameLoop();
+
+        playAudio();
     }
 
     createPoints() {
@@ -390,6 +392,12 @@ class Game {
 
 function random(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
+}
+
+function playAudio() {
+    const audio = document.getElementById('musica');
+    audio.loop = true;
+    audio.play();
 }
 
 (function first() {

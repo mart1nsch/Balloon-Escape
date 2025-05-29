@@ -136,3 +136,45 @@ body{
     align-items: center;
     position: absolute;
 }
+
+.pointer{
+    cursor: pointer;
+}
+
+.controles-btn{
+    border: 5px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controles-btn img{
+    width: 50px;
+}
+
+.controles-cima{
+    display: flex;
+    justify-content: center;
+}
+
+.controles-baixo{
+    display: flex;
+    margin-top: 5px;
+}
+
+.controles-baixo div{
+    margin: 5px;
+}
+
+.tela-inicial-divisao{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.controles{
+    justify-content: flex-end;
+    margin-bottom: 5%;
+}

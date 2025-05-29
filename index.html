@@ -10,8 +10,23 @@
     <video class="background" src="./assets/img/background.mp4" autoplay loop muted></video>
     <div class="container">
         <div class="tela-inicial">
-            <h1 class="title">Balloon Escape</h1>
-            <h2 class="sub-title">Clique para Começar</h2>
+            <div class="tela-inicial-divisao">
+                <h1 class="title">Balloon Escape</h1>
+                <h2 class="sub-title pointer">Clique para Começar</h2>
+            </div>
+            <div class="controles tela-inicial-divisao">
+                <h1>Controles</h1>
+                <br>
+                <br>
+                <div class="controles-cima">
+                    <div class="controles-btn"><img src="./assets/img/controls/up.png"></div>
+                </div>
+                <div class="controles-baixo">
+                    <div class="controles-btn"><img src="./assets/img/controls/left.png"></div>
+                    <div class="controles-btn"><img src="./assets/img/controls/down.png"></div>
+                    <div class="controles-btn"><img src="./assets/img/controls/right.png"></div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-end-game">
@@ -32,6 +47,9 @@
     <div class="controls">
 
     </div>
+    <audio id="musica" preload="auto">
+        <source src="./assets/audio/Key.mp3" type="audio/mpeg">
+    </audio>
 </body>
 <script src="./assets/js/main.js"></script>
 </html>
